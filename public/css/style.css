@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #373438;
+
+}
+ 
+body {
+    height : 100vh;
+    width:  100vvw;
+    background-color: blueviolet;
+    
+    justify-content: center;
+   
+
+    
+}
+header{
+    min-height: 10%;
+    width: 100%;
+    background-color:#ecc1a6;    
+    display: flex;
+    align-items: center;
+      
+
+    
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    color: #373438 ;
+    width: 100%;  
+    justify-content: center;  
+
+}
+header nav {
+    width: 100%;    
+    display: flex;
+    justify-content: space-around; 
+}
+
+main{
+    min-height:80%;
+    background-color: #343638;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 100%;
+    
+   
+}
+div#detalhes{
+    height: 150px;
+    width: 300px;
+    background-color: #1fd75f;
+    color: white;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+table td {
+	border: solid black;
+	color: black;
+}
+table{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+
+img#foto_principal{
+    height: 40rem;
+    border-radius: 5%;
+    border: solid #ecc1a6;
+    
+}
+
+section.capas article.cards{
+    height: 400px;
+    width: 400px;
+    border-radius: 5%;
+    border: solid #ecc1a6;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+   
+}
+div.botoes{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px;   
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    
+}
+a#but{
+   
+    height:200%;
+    width: 200%;
+    color: #ecc1a6;
+}
+article.cards div.card_img{
+    height: 90%;
+    width: 100%;
+    border-radius: 5%;
+ 
+    display: flex;  
+    justify-content: center;
+   
+}
+#img{
+    height: auto;
+    width: 100%;
+    border-radius: 5%;
+}
+article.cards div.card_nome{
+    height: 8%;
+    width: 100%;
+    
+    border-radius: 5%;
+    background-color:#ecc1a6;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    
+    
+    
+}
+h3{
+    color:#343638
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100%;
+}
+
+footer{
+    height: 10%;
+    background-color: #ecc1a6;
+}
+form button#butEnviar {
+    color:#373438;
+    background-color:#ecc1a6;
+    height: 40px;
+   box-decoration-break: clone;
+    
+
+}
+

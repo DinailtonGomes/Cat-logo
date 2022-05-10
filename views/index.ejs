@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/0377980d01.js" crossorigin="anonymous"></script>
+    <title>Index</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %> 
+     <main>            
+            <section>
+                <div id="img"><img id="foto_principal" src="https://cdn.discordapp.com/attachments/964597817966465097/972733378002567198/Screenshot_3114.PNG" alt="imagem_fundo"></div>
+             </section> 
+            <section class="capas">
+                <% listDisco.forEach(element => { %>
+                    <a href="/detalhes/<%= element.id %> ">                
+                         <article class="cards">
+                            <div class="card_img">
+                                 <img id="img" src="<%= element.imagem %> " alt="<%= element.nome_album %> ">
+                            </div>
+                            <div class="card_nome">
+                                <h3><%= element.nome_album %> </h3>
+                            </div>
+                        </article> 
+                     </a>    
+                     <div class="botoes">
+                        <a href="/deletar/<%= element.id %> " id="but"><i class="fa-solid fa-trash-can"></i></a>  
+                        <a href="/editar/ <%= element.id %> " id="but"><i class="fa-solid fa-pencil"></i></a>    
+                     </div>
+                     
+                 <% }) %>
+            </section>
+        </main>   
+    <%- include('./partials/footer.ejs') %>  
+</body>
+</html>

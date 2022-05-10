@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/0377980d01.js" crossorigin="anonymous"></script>
+    <title>Detalhes</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %> 
+    <main>
+        <div id="detalhes">
+            <table>
+                <thead>
+                    <td id="titulo_tabela" colspan="2"> <%= album_detalhes.nome_album %></td> 
+                </thead>
+                <tbody>
+                   <tr>
+                       <td>Lançamento:</td>
+                       <td> <%= album_detalhes.ano %></td>
+                   </tr>
+                   <tr>
+                       <td>Gravadora:</td>
+                       <td> <%= album_detalhes.gravadora %></td>
+                   </tr>
+                   <tr>
+                       <td>Album:</td>
+                       <td><%= album_detalhes.nome_album %></td>
+                   </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section class="capas" >
+          <iframe <%= album_detalhes.iframe %> ></iframe>  
+
+        </section>
+    </main>
+    <%- include('./partials/footer.ejs') %> 
+</body>
+</html>
