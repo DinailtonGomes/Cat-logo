@@ -36,7 +36,8 @@ export const discografia = connection.define('discografia', {
     updateAt: false,
     timestamps: false
 })
-function initTable(){
-    discografia.async()
+
+const initTable = async () => {
+    await discografia.sync()
 }
 initTable()
